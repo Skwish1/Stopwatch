@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    text-align: center;
+    font-family: 'Kavoon', sans-serif;
+    color: white;
+}
+
+@keyframes color {
+    0%   { background: #33a1cc; }
+    30%  { background: #3384e0; }
+    45%  { background: #B8CC33; }
+    70%  { background: #FCCA00; }
+    100% { background: #33a1cc; }
+  }
+
+body {
+    background: #33CCCC; /* Fallback */
+    animation: color 10s infinite linear;
+    text-align: center;
+    padding: 2em;
+}
+
+h1 {
+    font-size: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: inline-block;
+    margin: 50px;
+    margin-top: 50px;
+    height: 150px;
+    width: 100px;
+}
+
+.hour, .minute, .second, .millisecond {
+    margin-top: 30px;
+    color:rgb(255, 255, 255) ;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.name-hour, .name-minute, .name-second, .name-millisecond {
+    margin-top: 20px;
+    color:rgb(0, 0, 0);
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+
+.block-btn {
+    margin: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.start, .stop, .pause {
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+}
+.start:hover, .stop:hover, .pause:hover  {
+    background-color: #FCCA00;
+}
+
+  
